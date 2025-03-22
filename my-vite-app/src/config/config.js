@@ -1,3 +1,3 @@
-const baseUrl = "http://localhost:5000";
+const baseUrl = "https://right-choice-trust.onrender.com";
 
 export default baseUrl;
