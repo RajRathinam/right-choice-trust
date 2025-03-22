@@ -159,7 +159,7 @@ const Poster = ({ contact ,user,fetchContactInfo,getUser,deleteUser}) => {
       <div className='bg-white rounded-xl h-[210px] sm:h-[195px] w-full p-4 hidden sm:flex'>
         <div className='sm:w-[10%] sm:h-[100px] flex flex-col gap-1'>
           <div className='p-3 bg-gradient-to-r from-[#8257E6] via-[#C054FF] to-[#E65ACF] rounded-[50%] flex justify-center items-center'>
-            <img src="../../public/logo.png" className='w-[100px] h-[100px]' />
+            <img src="/logo.png" className='w-[100px] h-[100px]' />
           </div>
           <div className='border-l-4 border-r-4 rounded-lg border-blue'>
             <h1 className='font-bold text-center'>Since 2020</h1>
