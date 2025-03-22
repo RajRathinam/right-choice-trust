@@ -1,5 +1,6 @@
 import { useState } from "react";
 import baseUrl from "../config/config";
+import {toast} from "react-toastify";
 
 export default function LoginForm({getUser,closeLoginModal}) {
   const [email, setEmail] = useState("");
@@ -25,11 +26,11 @@ export default function LoginForm({getUser,closeLoginModal}) {
       if (response.ok) {
         localStorage.setItem("token", data.token); // Store token
         getUser();
+        toast.success("Successfully Logged in !!!")
       } else {
         alert(data.message || "Login failed");
       }
     } catch (error) {
-      console.error("Error logging in:", error);
       alert("Something went wrong. Try again.");
     }finally{
         setEmail("");
